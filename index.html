@@ -52,6 +52,11 @@
           <div class="cart">
             <span class="cart-count">5</span>
           </div>
+          <div class="toggle-menu">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
         </header>
       </div>
     </div>
@@ -108,7 +113,7 @@
         <div class="product">
           <div class="product-item">
             <img src="/img/product01.png" alt="А" />
-            <p class="product-title">Диагностика</p>
+            <p class="product-title">Полная<br />диагностика</p>
             <p class="product-price">₽ 7300</p>
           </div>
           <div class="product-item">
@@ -124,7 +129,7 @@
 
           <div class="product-item">
             <img src="/img/product04.png" alt="a" />
-            <p class="product-title">Олег</p>
+            <p class="product-title">Олег<br />=)</p>
             <p class="product-price">₽ 200</p>
           </div>
         </div>
@@ -158,12 +163,10 @@
                 </li>
               </ul>
             </div>
-          
+
             <div class="footer-list">
               <ul>
-                <li class="footer-list-item footer-list-title">
-                  Категории
-                </li>
+                <li class="footer-list-item footer-list-title">Категории</li>
                 <li class="footer-list-item">
                   <a class="footer-list-link" href="#">Для мужчин</a>
                 </li>
@@ -178,10 +181,25 @@
                 </li>
               </ul>
             </div>
-         
           </div>
         </footer>
       </div>
     </div>
+    <div class="nav-bar">
+      <ul class="nav-list">
+          <li class="nav-list-item"><a href="" class="nav-link">Мужчинам</a></li>
+          <li class="nav-list-item"><a href="" class="nav-link">Женщинам</a></li>
+          <li class="nav-list-item"><a href="" class="nav-link">Детям</a></li>
+          <li class="nav-list-item"><a href="" class="nav-link">Оплата</a></li>
+          <li class="nav-list-item"><a href="" class="nav-link">Доставка</a></li>
+      </ul>
+  </div>
+    <script>
+      var toggleButton = document.querySelector(".toggle-menu");
+      var navBar = document.querySelector(".nav-bar");
+      toggleButton.addEventListener("click", function () {
+        navBar.classList.toggle("toggle");
+      });
+    </script>
   </body>
 </html>
