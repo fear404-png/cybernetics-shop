@@ -317,6 +317,12 @@ header {
     margin-bottom: 25px;
   }
 }
+@media (max-width: 576px) {
+  .product-item {
+    flex: 0 0 96%;
+    margin-bottom: 25px;
+  }
+}
 .product-item:before, .product-item:after {
   content: "";
   display: block;
