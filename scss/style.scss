@@ -150,9 +150,9 @@ nav {
 .sale {
   animation: showA 2s;
   &-description {
-    @include breakpoint (sm) {
+    @include breakpoint(sm) {
       font-size: 20px;
-  }
+    }
     font-size: 30px;
     letter-spacing: -0.6px;
   }
@@ -167,13 +167,14 @@ nav {
 .box {
   position: relative;
   animation: showRight 1s;
-  @include breakpoint (lg) {
+  @include breakpoint(lg) {
     max-width: 600px;
     margin: 50px auto 0;
-}
-@include breakpoint (sm) {
-    max-width: 300px;
-}
+  }
+  @include breakpoint(sm) {
+    display: none;
+  }
+
   &-price {
     position: absolute;
     right: 0;
@@ -252,7 +253,6 @@ nav {
     background-position: calc(100% - 120px) bottom;
     background-size: 190px 171px;
     @include breakpoint(lg) {
-      
       flex: 0 0 100%;
     }
     @include breakpoint(sm) {
@@ -355,8 +355,8 @@ nav {
     }
   }
   &-logo {
+    display: none;
     flex: 0 0 40%;
-    
   }
   &-navigation {
     flex: 0 0 60%;

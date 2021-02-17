@@ -182,7 +182,7 @@ header {
 }
 @media (max-width: 576px) {
   .box {
-    max-width: 300px;
+    display: none;
   }
 }
 .box-price {
@@ -365,6 +365,7 @@ header {
   list-style-type: none;
 }
 .footer-logo {
+  display: none;
   flex: 0 0 40%;
 }
 .footer-navigation {
